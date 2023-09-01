@@ -129,10 +129,10 @@ export default () => {
         external: ["jss-plugin-globalThis"],
         plugins: [
           rollupNodePolyFill(),
-          NodeGlobalsPolyfillPlugin({
-            buffer: true,
-            process: true,
-          }),
+          // NodeGlobalsPolyfillPlugin({
+          //   buffer: true,
+          //   process: true,
+          // }),
         ],
       },
     },
