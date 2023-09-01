@@ -54,8 +54,8 @@ export const LoginUser = (values, navigate, type) => async (dispatch) => {
         setCookie("token", response.access_token);
         setCookie("role", response.role);
         dispatch(stopLoading());
-        navigate("/profile");
-        // window.location.href = "/profile";
+        // navigate("/profile");
+        window.location.href = "/profile";
       } else {
         dispatch(stopLoading());
         toast.error(
