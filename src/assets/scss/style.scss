@@ -1,0 +1,215 @@
+/*================================================================================
+	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
+	Version: 2.0
+	Author: PIXINVENT
+	Author URL: http://www.themeforest.net/user/pixinvent
+================================================================================
+
+NOTE:
+------
+PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
+WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+
+.modal.fade.show {
+  backdrop-filter: blur(2px);
+  background-color: #00000099;
+}
+
+#RFS-StepButton {
+  border-radius: 50%;
+  padding: 20px;
+}
+.application-detail .form-control[readonly] {
+  opacity: 1;
+  background: #80808017;
+}
+#react-select-6-listbox {
+  z-index: 500 !important;
+}
+
+@media (max-width: 450px) {
+  .c-timeline {
+    padding-left: 0;
+  }
+}
+
+.c-timeline__item {
+  position: relative;
+  display: flex;
+  gap: 2rem;
+  //outline: solid 1px;
+
+  &:last-child {
+    .c-timeline__content {
+      &:before {
+        display: none;
+      }
+    }
+  }
+}
+
+.c-timeline__content {
+  flex: 1;
+  position: relative;
+  order: 1;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+
+  &:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    left: 9px;
+    height: 100%;
+    width: 2.2px;
+    background-color: lightgrey;
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    left: calc(0px - 11px);
+    top: 0;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    z-index: 1;
+    border: 2px solid lightgrey;
+    border-radius: 50%;
+  }
+}
+@media (max-width: 400px) {
+  .c-timeline__title {
+    font-size: 12px;
+  }
+  .c-timeline__desc {
+    font-size: 12px;
+  }
+  .c-timeline__item {
+    gap: 1.3rem;
+  }
+}
+
+.c-timeline__title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.c-timeline__desc {
+  color: grey;
+}
+
+time {
+  text-align: end;
+  flex: 0 0 100px;
+  min-width: 0;
+  overflow-wrap: break-word;
+  padding-bottom: 1rem;
+}
+
+.c-timeline__content.approve {
+  &:before {
+    content: "";
+    background-color: #27aa80;
+  }
+
+  &:after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: url("../images/icons/correct.svg");
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #27aa80;
+    border: 2px solid #27aa80;
+  }
+}
+.c-timeline__content.reject {
+  &:before {
+    content: "";
+    background-color: #ff0000;
+  }
+
+  &:after {
+    content: url("../images/icons/reject.svg");
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ff0000;
+    border: 2px solid #ff0000;
+  }
+}
+.c-timeline__content.pending {
+  &:before {
+    content: "";
+    background-color: #f7be16;
+  }
+
+  &:after {
+    content: url("../images/icons/pending.svg");
+    background-color: #f7be16;
+    border: 2px solid #f7be16;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.c-timeline__content.defualt {
+  &:before {
+    content: "";
+    background-color: #e0e0e0;
+  }
+
+  &:after {
+    content: url("../images/icons/nostatus.svg");
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0e0e0;
+    border: 2px solid #e0e0e0;
+  }
+}
+
+.react-datepicker-wrapper,
+.react-datepicker__input-container {
+  width: 100%;
+}
+
+.card-hover {
+  cursor: pointer;
+  transition: 0.5s;
+  border-radius: 0.428rem;
+}
+
+.card-hover.active {
+  background-color: antiquewhite;
+}
+
+.card-hover:hover {
+  background-color: antiquewhite;
+}
+
+.dark-layout {
+  .card-hover.active {
+    background: linear-gradient(45deg, black, transparent);
+  }
+
+  .card-hover:hover {
+    background: linear-gradient(45deg, black, transparent);
+  }
+}
+
+.react-dataTable > header {
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .home-title {
+    font-size: 20px !important;
+  }
+}
